@@ -83,7 +83,7 @@ function Home() {
         <section className="weather__searchBar">
           <span className="weather__searchBar-con">
             <input className="searchField" type="text" placeholder="Enter City Name" onChange={e => setCname(e.target.value)} onKeyDown={handleKeydown}/>
-            <button className="searchBtn" onClick={weatherHandle}><img src="./public/img/search.svg" /></button>
+            <button className="searchBtn" onClick={weatherHandle}><img src="./img/search.svg" /></button>
           </span>
         </section>
 
@@ -92,13 +92,13 @@ function Home() {
         <section className="weather__extraInfo">
 
           <div className="infoPanel infoWind">
-            <img className="infoPanel__pic" src="./public/img/wind.svg" />
+            <img className="infoPanel__pic" src="./img/wind.svg" />
             <p className="infoPanel__content">{wdata.wind}<b>km/h</b></p>
             <p className="infoPanel__name">風速</p>
           </div>
 
           <div className="infoPanel infoHumidity">
-          <img className="infoPanel__pic" src="./public/img/humidity.svg" />
+          <img className="infoPanel__pic" src="./img/humidity.svg" />
             <p className="infoPanel__content">{wdata.humidity}<b>%</b></p>
             <p className="infoPanel__name">濕度</p>
           </div>
@@ -108,7 +108,7 @@ function Home() {
         <section className="weather__mainInfo minInfo">
 
             <span className="minInfo__cityName">{wdata.cityname}</span>
-            <span className="minInfo__picGallery animate" ref={aniRef}><img src={`./public/img/${wdata.icon}.png`} /></span>
+            <span className="minInfo__picGallery animate" ref={aniRef}><img src={`./img/${wdata.icon}.png`} /></span>
             <span className="minInfo__forecast">{wdata.description}</span>
             <span className="minInfo__temperature">{wdata.celcious}<b>°C</b></span>
 
